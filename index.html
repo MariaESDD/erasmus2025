@@ -457,6 +457,39 @@
       margin-top: 0.2rem;
     }
 
+	  <!-- ****************** -->
+	
+.city-card {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.city-card h3 {
+    order: 1 !important;
+    position: static !important;
+}
+
+.city-card p {
+    order: 2 !important;
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 0 15px 0 !important;
+}
+
+.city-card .city-video {
+    order: 3 !important;
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+.city-card .city-info {
+    order: 4 !important;
+}
+
+
     @media (max-width: 768px) {
       .cities-grid { grid-template-columns: 1fr; }
     }
