@@ -513,28 +513,7 @@
       letter-spacing: 0.15em; text-transform: uppercase;
       color: rgba(26,16,64,0.55);
     }
-	  
-	<!--
-    /* ─── IMPACT ─────────────────────────────────────── */
-    #impact { background: var(--white); }
-    .impact-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 2rem; margin-top: 3rem;
-    }
-    .impact-card {
-      padding: 2.5rem 2rem; background: var(--light);
-      border-radius: 4px; text-align: center;
-      transition: transform 0.2s;
-    }
-    .impact-card:hover { transform: translateY(-4px); }
-    .impact-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-    .impact-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem; font-weight: 700;
-      color: var(--teal); line-height: 1;
-    }
-    .impact-desc { font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem; line-height: 1.5; }
-	-->
+
 	  
     /* ─── GALLERY ─────────────────────────────────────── */
     #gallery { background: var(--light); }
@@ -590,7 +569,7 @@
     @media (max-width: 768px) {
       .intro-grid,
       .country-panel.active,
-      .impact-grid,
+     /* .impact-grid,*/
       .project-columns { grid-template-columns: 1fr; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
       .gallery-item.wide { grid-column: span 2; }
@@ -618,7 +597,7 @@
     <li><a href="#mobilities">Mobilities</a></li>
     <li><a href="#countries">Countries</a></li>
     <li><a href="#cities">Cities</a></li>
-    <li><a href="#impact">Impact</a></li>
+ <!--   <li><a href="#impact">Impact</a></li> -->
     <li><a href="#gallery">Gallery</a></li>
   </ul>
 </nav>
@@ -1057,46 +1036,6 @@
   </blockquote>
 </div>
 
-<!-- ── IMPACT ── -->
-<section id="impact">
-  <div class="container">
-    <p class="section-label fade-in">Why It Matters</p>
-    <h2 class="section-title fade-in">The Impact of Arts Inclusion</h2>
-    <div class="impact-grid">
-      <div class="impact-card fade-in">
-        <div class="impact-icon">🧠</div>
-        <div class="impact-num">73%</div>
-        <div class="impact-desc">of participants in arts therapy programmes report improved mental wellbeing and reduced social isolation (EU Cultural Participation Study, 2022)</div>
-      </div>
-      <div class="impact-card fade-in">
-        <div class="impact-icon">🤲</div>
-        <div class="impact-num">2×</div>
-        <div class="impact-desc">more likely to find employment — participants in arts-based vocational programmes show double the job placement rate compared to traditional approaches</div>
-      </div>
-      <div class="impact-card fade-in">
-        <div class="impact-icon">🌍</div>
-        <div class="impact-num">120+</div>
-        <div class="impact-desc">Erasmus+ funded projects across Europe specifically focused on arts and social inclusion in the past 5 years</div>
-      </div>
-      <div class="impact-card fade-in">
-        <div class="impact-icon">🎓</div>
-        <div class="impact-num">85%</div>
-        <div class="impact-desc">of teachers in schools with integrated arts inclusion programmes report improved peer relationships and reduced bullying</div>
-      </div>
-      <div class="impact-card fade-in">
-        <div class="impact-icon">💬</div>
-        <div class="impact-num">60+</div>
-        <div class="impact-desc">languages represented in European community arts projects — demonstrating arts' power to transcend linguistic barriers</div>
-      </div>
-      <div class="impact-card fade-in">
-        <div class="impact-icon">❤️</div>
-        <div class="impact-num">91%</div>
-        <div class="impact-desc">of participants say they feel "more accepted" and "more confident" after participating in inclusive arts workshops (WHO arts & health evidence review)</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ── GALLERY ── -->
 <section id="gallery">
   <div class="container">
@@ -1145,7 +1084,7 @@
           <li><a href="#project">The Project</a></li>
           <li><a href="#mobilities">Mobilities</a></li>
           <li><a href="#countries">Countries</a></li>
-          <li><a href="#impact">Impact</a></li>
+    <!--     <li><a href="#impact">Impact</a></li>    -->
           <li><a href="#gallery">Gallery</a></li>
         </ul>
       </div>
