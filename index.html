@@ -607,6 +607,42 @@
       .gallery-grid { grid-template-columns: 1fr; }
       .gallery-item.wide { grid-column: auto; }
     }
+
+    
+/* Todas as imagens da galeria com o mesmo tamanho */
+.gallery-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.gallery-row .gallery-item {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-row .gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Adaptação para telemóveis */
+@media (max-width: 600px) {
+    .gallery-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .gallery-row .gallery-item {
+        height: 150px;
+    }
+}
+	  
   </style>
 </head>
 <body>
